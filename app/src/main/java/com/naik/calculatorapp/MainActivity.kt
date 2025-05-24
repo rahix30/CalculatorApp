@@ -94,6 +94,18 @@ class MainActivity : ComponentActivity() {
                                 },
                                 modifier = Modifier.padding(16.dp)
                             )
+                            NavigationDrawerItem(
+                                label = { Text("Time Period Calculator") },
+                                selected = false,
+                                onClick = {
+                                    scope.launch {
+                                        drawerState.close()
+                                        val intent = Intent(this@MainActivity, TimePeriodCalculator::class.java)
+                                        startActivity(intent)
+                                    }
+                                },
+                                modifier = Modifier.padding(16.dp)
+                            )
                         }
                     },
                     drawerState = drawerState
