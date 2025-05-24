@@ -1,1 +1,41 @@
+# Build directory
 /build
+
+# IDE specific files
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Gradle files
+.gradle
+/local.properties
+/captures
+
+# Android Studio specific files
+*.apk
+*.ap_
+*.aab
+*.jar
+*.dex
+*.class
+
+# Kotlin specific files
+*.kts
+*.ktm
+*.kts[0-9]
+*.ktm[0-9]
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Mac specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
