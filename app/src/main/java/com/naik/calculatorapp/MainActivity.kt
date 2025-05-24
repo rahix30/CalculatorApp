@@ -82,6 +82,18 @@ class MainActivity : ComponentActivity() {
                                 },
                                 modifier = Modifier.padding(16.dp)
                             )
+                            NavigationDrawerItem(
+                                label = { Text("CAGR Calculator") },
+                                selected = false,
+                                onClick = {
+                                    scope.launch {
+                                        drawerState.close()
+                                        val intent = Intent(this@MainActivity, CAGRCalculator::class.java)
+                                        startActivity(intent)
+                                    }
+                                },
+                                modifier = Modifier.padding(16.dp)
+                            )
                         }
                     },
                     drawerState = drawerState

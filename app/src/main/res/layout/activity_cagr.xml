@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme" />
+
+    <EditText
+        android:id="@+id/initialValueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Initial Value"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/finalValueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Final Value"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/timePeriodInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time Period (years)"
+        android:inputType="number"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/calculateCAGRButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate CAGR"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/cagrResultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAGR will appear here"
+        android:textSize="18sp" />
+
+</LinearLayout>
